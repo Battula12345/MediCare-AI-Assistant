@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard | Telemedicine App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-container {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .welcome-message {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #2980b9;
+        }
+
+        .card {
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+
+        .action-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .action-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .logout-btn {
+            background-color: #e74c3c;
+            margin-top: 30px;
+        }
+
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Doctor Dashboard</h1>
+        <p class="welcome-message">Welcome, Dr. John Doe! You are now logged in to the Telemedicine App.</p>
+
+        <!-- Appointment Scheduling -->
+        <div class="card">
+            <h2>Appointment Scheduling</h2>
+            <p>Manage your patient appointments. Schedule new appointments or view upcoming ones.</p>
+            <a href="appointment-scheduling.html" class="action-btn">Schedule an Appointment</a>
+        </div>
+
+        <!-- Appointment History -->
+        <div class="card">
+            <h2>Appointment History</h2>
+            <p>View your past appointments with patients and their details.</p>
+            <a href="appointment-history.html" class="action-btn">View Appointment History</a>
+        </div>
+
+        <!-- Logout -->
+        <a href="index.html" class="action-btn logout-btn">Logout</a>
+    </div>
+</body>
+</html>
